@@ -1,0 +1,6 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=530
+
+This is a syntax file for mixed C source and assembly dump, disassembled by gnu "objdump" utility. It does not recognize processor instructions so, it can be used on any platform. Here are the commands to generate the mixed disassembly. Make sure the source file is in the same directory as the object file.
+gcc -g -c xxx.c                       /*output is xxx.o*/
+objdump -S xxx.o > xxx.dis  /* creates disassembly mixed with source */
+
